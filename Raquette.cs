@@ -29,10 +29,13 @@ static partial class Program
         {
             positionRaquette.X = 0;
         }
+        
+        
         // Empeche de sortir a gauche de la fenetre
-        if (positionRaquette.Y > LARGEUR)
+        float largeurEcran = Raylib.GetScreenWidth();
+        if (positionRaquette.X + LARGEUR_RAQUETTE > largeurEcran)
         {
-            positionRaquette.Y = LARGEUR;
+            positionRaquette.X = largeurEcran - LARGEUR_RAQUETTE;
         }
     }
 

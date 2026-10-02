@@ -47,6 +47,7 @@ static partial class Program
     {
         positionRaquette.X = (LARGEUR - LARGEUR_RAQUETTE) / 2.0f;
         positionRaquette.Y = HAUTEUR - HAUTEUR_RAQUETTE - MARGE_BAS_RAQUETTE;
+        CollerBalleARaquette();
 
     }
 

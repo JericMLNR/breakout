@@ -45,11 +45,15 @@ static partial class Program
     /// <summary>Remet le jeu dans son état de départ.</summary>
     static void Reinitialiser()
     {
+        positionRaquette.X = (LARGEUR - LARGEUR_RAQUETTE) / 2.0f;
+        positionRaquette.Y = HAUTEUR - HAUTEUR_RAQUETTE - MARGE_BAS_RAQUETTE;
+
     }
 
     /// <summary>Une image de jeu dans l'état Attente.</summary>
     static void MettreAJourAttente(float dt)
     {
+        DeplacerRaquette(dt);
     }
 
     /// <summary>Une image de jeu dans l'état Jeu.</summary>
@@ -61,4 +65,6 @@ static partial class Program
     static void MettreAJourFin()
     {
     }
+
+
 }

@@ -49,6 +49,14 @@ static partial class Program
         positionRaquette.Y = HAUTEUR - HAUTEUR_RAQUETTE - MARGE_BAS_RAQUETTE;
         CollerBalleARaquette();
 
+        for (int ligne = 0; ligne < LIGNES_BRIQUES; ligne++)
+        {
+            for (int colonne = 0; colonne < COLONNES_BRIQUES; colonne++)
+            {
+                briques[ligne, colonne] = true;
+            }
+        }
+
     }
 
     /// <summary>Une image de jeu dans l'état Attente.</summary>

@@ -59,14 +59,14 @@ static partial class Program
             vitesseBalle.X = -vitesseBalle.X;
         }
 
-        // Rebond haut
+        // Rebond droit
         if (positionBalle.X + RAYON_BALLE > LARGEUR)
         {
             positionBalle.X = LARGEUR - RAYON_BALLE;
             vitesseBalle.X = -vitesseBalle.X;
         }
 
-        // Rebond droit
+        // Rebond haut
         if (positionBalle.Y - RAYON_BALLE < 0)
         {
             positionBalle.Y = RAYON_BALLE;
